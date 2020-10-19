@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content:center;
+    background-color: peachpuff;
+    font-family: 'Metal Mania', cursive;
+}
+
+/*HEADING AREA*/
+.header{
+    background-color: rgb(0, 163, 218);
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    top: 10%;
+
+
+
+}
+
+.heading{
+    padding-top: 10px;
+    text-shadow: 2px 2px #ebe1e1;
+text-align: center;
+}
+
+/*Font-family*/
+.text-input{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+/*container*/
+.container{
+    background-color: rgb(161, 38, 79);
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 700px;
+    max-width: 90%; /*this is so that it never pass 90% of our screen.*/
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.timerHeading{
+    position: absolute;
+    font-size: 3rem;
+    color: blue;
+    font-weight:bold;
+
+    top:70%;
+}
+
+.timer{
+    position: absolute;
+    top: 80%;
+    font-size: 3rem;
+    color: blue;
+    font-weight:bold;
+
+
+}
+
+/*headings*/
+h2{
+    color: white;
+}
+/*Text Display*/
+.text-display{
+    color:white;
+    margin-bottom: 1rem;
+    margin-left:calc(1rem + 2px);/* we set a margin, we calculate this from the left padding we just want the oppostie of the padding in our text-input 1rem
+      this will just make it easier for the person typing to see where they are.*/
+    margin-right: calc(1rem +2px);
+    font-size: 1rem;
+    
+}
+
+#textDisplay {
+    
+    /*text-align: center;*/
+}
+
+
+/*Text Input*/
+.text-input{
+    background-color: transparent;
+    color:white;
+    border:2px solid palevioletred;
+    outline: none; /*disables the outline but this will disable the focus state and impossible to know if we have already click on it.*/
+    width: 100%; /*This will fill the entire container*/
+    height: 10rem;/*This will be really large so that if we have large text it will easily fit inside of this box.*/
+    margin: auto; /*This will make sure that this always stays centered*/
+    padding: .5rem 1rem; /*this will make the text not push up on the edge we can do that by using padding*/
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+
+
+
+
+
+.text-input:focus{
+    border-color: black; /*This way we will know that we are focus inside of that element. This makes it easier for people to know were the focus is. You need to highlight the focus state to make sure that it is working the way you want it to. */
+
+}
+
+#textInput{}
+
+
+.correct{
+    color: rgb(126, 192, 126);
+}
+
+.incorrect{
+    color: red;
+    text-decoration: underline;
+}
+
+
+
+
+
